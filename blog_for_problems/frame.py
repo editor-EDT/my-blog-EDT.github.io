@@ -4,7 +4,7 @@ from flask import Flask,render_template,request
 app = Flask(__name__)
 app.debug=True
 
-@app.route('/frame/',methods=["GET","POST"])
+@app.route('https://editor-edt.github.io/my-blog-EDT.github.io/blog_for_problems/templates/frame.html',methods=["GET","POST"])
 def frame():
     if request.method == 'POST':
         print(request.form)
@@ -34,7 +34,7 @@ def frame():
     f.close()
     return render_template('/frame.html',posts = fricts, num_f = num_f, comments = comments)
 
-@app.route('/input/')
+@app.route('https://editor-edt.github.io/my-blog-EDT.github.io/blog_for_problems/templates/input.html')
 def input():
     return render_template('/input.html')
 
