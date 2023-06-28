@@ -32,11 +32,11 @@ def frame():
             comments[int(z.split('{[(')[0])] = [z.split('{[(')[1]]
     print(comment_f,comments)
     f.close()
-    return render_template('/frame.html',posts = fricts, num_f = num_f, comments = comments)
+    return render_template('https://editor-edt.github.io/my-blog-EDT.github.io/blog_for_problems/templates/frame.html',posts = fricts, num_f = num_f, comments = comments)
 
 @app.route('https://editor-edt.github.io/my-blog-EDT.github.io/blog_for_problems/templates/input.html')
 def input():
-    return render_template('/input.html')
+    return render_template('https://editor-edt.github.io/my-blog-EDT.github.io/blog_for_problems/templates/frame.html')
 
 if __name__ == '__main__':
     app.run()
