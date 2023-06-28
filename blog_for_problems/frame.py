@@ -36,7 +36,7 @@ def frame():
 
 @app.route('https://editor-edt.github.io/my-blog-EDT.github.io/blog_for_problems/templates/input.html')
 def input():
-    return render_template('https://editor-edt.github.io/my-blog-EDT.github.io/blog_for_problems/templates/frame.html')
+    return render_template('https://editor-edt.github.io/my-blog-EDT.github.io/blog_for_problems/templates/input.html')
 
 if __name__ == '__main__':
     app.run()
